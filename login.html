@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <style>
+
+
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4e9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.login-section {
+  flex: 1;
+  padding: 50px;
+}
+
+.login-section h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.highlight {
+  color: #a25aff;
+  margin-right:9vh ;
+}
+
+.login-section p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.login-section form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field .eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: block;
+  margin-bottom: 20px;
+  color: #a25aff;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #a25aff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+
+.signup {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup a {
+  color: #a25aff;
+  text-decoration: none;
+}
+
+.image-section {
+  flex: 1;
+  background: linear-gradient(to bottom right, #d38aff, #815aff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ .signup a:hover {
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-section">
+      <h2><span class="highlight"></span>Member  Log In</h2>
+      <p>Welcome back! Please enter your details</p>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <div class="password-field">
+          <input type="password" placeholder="Password" required />
+    
+        </div>
+        <a href="forgot.html" class="forgot-password">forgot password ?</a>
+        <button type="submit" class="login-btn">Log in</button>
+      
+      </form>
+      
+     
+      <p class="signup">Don't have account? <a href="register.html">Sign up</a></p>
+    </div>
+    <div class="image-section">
+
+    </div>
+  </div>
+</body>
+</html>
